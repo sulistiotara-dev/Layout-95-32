@@ -1,0 +1,434 @@
+body{
+    background-image:url("miffy1.jpg");
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h2 {font-family:"KG Corner of the Sky";
+    font-size: 25pt;
+    background-color: teal;
+    color:white;
+    text-align: center;
+}
+@font-face {
+    font-family: "KG Corner of the Sky";
+    src: url("KGCorneroftheSky.ttf");
+}
+@font-face {
+    font-family: "Tommy Soft";
+    src: url("made_tommy_soft/tommy.otf");
+}
+@font-face {
+    font-family: "Tommy Soft Bold";
+    src: url("made_tommy_soft/MADE\ Tommy\ Soft\ Bold\ PERSONAL\ USE.otf");
+    font-weight: 700;
+}
+/* All section titles use the same font */
+h2, h3, h4, h5, h6 {
+    font-family:"KG Corner of the Sky";
+    text-align: center;
+}
+
+
+h3{
+    background-color:rgb(195, 78, 28);
+    color:wheat;
+    text-align: center;
+     font-size: 20pt;
+}
+
+h1{
+    background-color:rgb(117, 194, 249);
+    color:black;
+    text-align: center;
+    width: 800px;
+    font-family: "Tommy Soft Bold";
+    font-weight: 700;
+}
+h4{
+    background-color: rgb(190, 22, 95);
+    color:wheat;
+    text-align: center;
+    font-size: 20pt;
+}
+h5{
+    background-color: teal;
+    color:white;
+    text-align: center;
+    font-size: 20pt;
+}
+h6{
+    background-color: rgb(195, 78, 28);
+    color:wheat;
+    text-align: center;
+    font-size: 20pt;
+}
+div.biodata{
+    margin: 30px auto;
+    width: 70%;
+    background-color:rgb(170, 210, 250);
+    color:rgb(8, 0, 52);
+    padding: 30px;
+    border-radius: 12 px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        gap:60px;
+}
+div.foto{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(8, 2, 77);
+}
+div.foto img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5 ease;
+}
+div.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+div.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+div.foto img.bottom{
+    opacity: 1;
+    z-index: 1;
+}
+div.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+div.makanan{
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+img{
+    padding: 10px;
+        border-radius: 20px;
+    }
+div.beef{
+    width:275px;
+    height:330px;
+    border-radius: 15px;
+    background-color:rgb(94, 216, 194);
+    box-shadow: 0 4px 8px 0 navy (5, 134, 5);
+    margin-bottom: 25px;
+}
+div.beef:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.tacos{
+    width:275px;
+    height:330px;
+    border-radius: 15px;
+    background-color: rgb(94, 216, 194);
+    box-shadow: 0 4px 8px 0 navy (5, 134, 5);
+    margin-bottom: 25px;
+}
+div.tacos:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.butter{
+    width:275px;
+    height:330px;
+    border-radius: 15px;
+    background-color: rgb(94, 216, 194);
+    box-shadow: 0 4px 8px 0 navy (5, 134, 5);
+    margin-bottom: 25px;
+}
+div.butter:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.sateklatak{
+    width:275px;
+    height:330px;
+    border-radius: 15px;
+    background-color: rgb(94, 216, 194);
+    box-shadow: 0 4px 8px 0 navy (5, 134, 5);
+    margin-bottom: 25px;
+}
+div.sateklatak:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.minuman{
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+img{
+    padding: 10px;
+        border-radius: 20px;
+    }
+div.chailatte{
+    width:275px;
+    height:330px;
+    border-radius: 15px;
+    background-color:rgb(250, 184, 104);
+    box-shadow: 0 4px 8px 0 orangered (5, 134, 5);
+    margin-bottom: 25px;
+}
+div.chailatte:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.icetea{
+    width:270px;
+    height:330px;
+    border-radius: 15px;
+    background-color: rgb(250, 184, 104);
+    box-shadow: 0 4px 8px 0 orangered (5, 134, 5);
+    margin-bottom: 25px;
+}
+div.icetea:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.coconut{
+    width:270px;
+    height:330px;
+    border-radius: 15px;
+    background-color: rgb(250, 184, 104);
+    box-shadow: 0 4px 8px 0 orangered (5, 134, 5);
+    margin-bottom: 25px;
+}
+div.coconut:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.watermelon{
+    width:270px;
+    height:330px;
+    border-radius: 15px;
+    background-color: rgb(250, 184, 104);
+    box-shadow: 0 4px 8px 0 orangered (5, 134, 5);
+    margin-bottom: 25px;
+}
+div.watermelon:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.ghibli{
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    justify-content:center;
+}
+img{
+    padding: 10px;
+        border-radius: 20px;
+    }
+
+div.wind{
+    width:270px;
+    height:410px;
+    border-radius: 15px;
+    background-color: bisque;
+    box-shadow: 0 4px 8px 0 brown (5, 134, 5);
+    margin-bottom: 25px;
+}
+div.wind:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.poppy{
+    width:270px;
+    height:410px;
+    border-radius: 15px;
+    background-color: bisque;
+    box-shadow: 0 4px 8px 0 brown (5, 134, 5);
+    margin-bottom: 25px;
+}
+div.poppy:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.totoro{
+    width:270px;
+    height:410px;
+    border-radius: 15px;
+    background-color: bisque;
+    box-shadow: 0 4px 8px 0 brown (5, 134, 5);
+    margin-bottom: 25px;
+}
+div.totoro:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.fireflies{
+    width:270px;
+    height:410px;
+    border-radius: 15px;
+    background-color: bisque;
+    box-shadow: 0 4px 8px 0 brown (5, 134, 5);
+    margin-bottom: 25px;
+}
+div.fireflies:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.activities{
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    justify-content:center;
+}
+img{
+    padding: 10px;
+        border-radius: 20px;
+    }
+
+div.eating{
+    width:270px;
+    height:390px;
+    border-radius: 15px;
+    background-color:rgb(94, 216, 194);
+    box-shadow: 0 4px 8px 0 navy (5, 134, 5);
+    margin-bottom: 25px;
+}
+div.eating:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.guitar{
+    width:270px;
+    height:390px;
+    border-radius: 15px;
+    background-color: rgb(94, 216, 194);
+    box-shadow: 0 4px 8px 0 navy (5, 134, 5);
+    margin-bottom: 25px;
+}
+div.guitar:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.hiking{
+    width:270px;
+    height:390px;
+    border-radius: 15px;
+    background-color: rgb(94, 216, 194);
+    box-shadow: 0 4px 8px 0 navy (5, 134, 5);
+    margin-bottom: 25px;
+}
+div.hiking:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.stargazing{
+    width:270px;
+    height:390px;
+    border-radius: 15px;
+    background-color: rgb(94, 216, 194);
+    box-shadow: 0 4px 8px 0 navy (5, 134, 5);
+    margin-bottom: 25px;
+}
+div.stargazing:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.animals{
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+img{
+    padding: 10px;
+        border-radius: 20px;
+    }
+div.fox{
+    width:275px;
+    height:370px;
+    border-radius: 15px;
+    background-color:rgb(250, 184, 104);
+    box-shadow: 0 4px 8px 0 orangered (5, 134, 5);
+    margin-bottom: 25px;
+}
+div.fox:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.whale{
+    width:270px;
+    height:370px;
+    border-radius: 15px;
+    background-color: rgb(250, 184, 104);
+    box-shadow: 0 4px 8px 0 orangered (5, 134, 5);
+    margin-bottom: 25px;
+}
+div.whale:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.dog{
+    width:270px;
+    height:370px;
+    border-radius: 15px;
+    background-color: rgb(250, 184, 104);
+    box-shadow: 0 4px 8px 0 orangered (5, 134, 5);
+    margin-bottom: 25px;
+}
+div.dog:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.eagle{
+    width:270px;
+    height:370px;
+    border-radius: 15px;
+    background-color: rgb(250, 184, 104);
+    box-shadow: 0 4px 8px 0 orangered (5, 134, 5);
+    margin-bottom: 25px;
+}
+div.eagle:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scaled(1.1);
+}

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="penjelasan.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejarah Wayang Kulit</title>
+</head>
+ <div class="header">
+                <h2>LAYOUT</h2>
+                <link rel="stylesheet" href="penjelasan2.css">
+            </div>
+              <head>
+
+            <div class="topnav">
+                <a href="index.html">Biodata</a>
+                <a href="tabel.html">Table</a>
+                <a href="list.html">List</a>
+                <a href="penjelasan.html">STS</a>
+            </div>
+<body>
+
+    <div class="container">
+        <h1 class="page-title">Sejarah</h1>
+
+        <div class="film-box-container">
+            <button class="tape-arrow arrow-2" id="arrowBack">&lt;</button>
+
+            <div class="film-viewport">
+                <div class="film-track" id="filmTrack">
+                    
+                    <div class="history-section">
+                        <div>
+                            <h2 class="sejarah-era">Abad ke-10</h2>
+                            <div class="section-content">
+                                <p class="card-text">
+                                    Wayang Kulit berkembang pesat pada masa kerajaan Hindu-Buddha sebagai media ritual keagamaan penghormatan leluhur. Pertunjukan pada era ini umumnya mengammbil kisah-kisah epik seperti Ramayana dan Mahabhrata.
+                                </p>
+                                <img src="wayang12.jpg".jpeg" alt="Wayang 1" class="card-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="history-section">
+                        <div>
+                            <h2 class="sejarah-era">Abad ke-15</h2>
+                            <div class="section-content">
+                                <p class="card-text">
+                                    Wali Songo, khususnya Sunan Kalijaga, mengadaptasi wayang sebagai sarana dakwah dan edukasi moral masyarakat Jawa. Bentuk fisik wayang disempurnakan menjadi lebih pipih dan artistik agar sesuai dengan ajaran Islam.
+                                </p>
+                                </p>
+                                <img src="sunan.jpg" alt="Wayang 2" class="card-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="history-section">
+                        <div>
+                            <h2 class="sejarah-era">Tahun 2003</h2>
+                            <div class="section-content">
+                                <p class="card-text">
+                                    UNESCO secara resmi mengukuhkan Wayang Kulit sebagai Masterpiece of Oral and Intangible Heritage of Humanity. Pengakuan internasional ini membuktikan tingginya nilai kebudayaan dan filosofi seni pertunjukan wayang.
+                                </p>
+                                <img src="unesco.jpg" alt="Wayang 3" class="card-img">
+                            </div>
+                        </div>
+                    </div>
+
+        
+                    <div class="history-section">
+                        <div>
+                            <h2 class="sejarah-era">Era Modern</h2>
+                            <div class="section-content">
+                                <p class="card-text">
+                                    Kini pertunjukan wayang dilestarikan secara global melalui media digital, museum interaktif, dan panggung internasional. Inovasi teknologi membuat generasi muda dapat menikmati seni sejarah ini dengan lebih mudah.
+                                </p>
+                                <img src="wayangmodern.jpeg" alt="Wayang 4" class="card-img">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="tape-arrow arrow-1" id="arrowNext">&gt;</button>
+        </div>
+    </div>
+
+    <script>
+        const track = document.getElementById('filmTrack');
+        const arrowNext = document.getElementById('arrowNext');
+        const arrowBack = document.getElementById('arrowBack');
+        const sections = document.querySelectorAll('.history-section');
+
+        let currentStep = 0;
+        const maxStep = sections.length - 3;
+
+        function updateTapePosition() {
+            const stepPercentage = 100 / 3; 
+            track.style.transform = `translateX(-${currentStep * stepPercentage}%)`;
+        }
+
+        arrowNext.addEventListener('mouseenter', () => {
+            if (currentStep < maxStep) {
+                currentStep++;
+                updateTapePosition();
+            }
+        });
+
+        arrowNext.addEventListener('click', () => {
+            if (currentStep < maxStep) {
+                currentStep++;
+            } else {
+                currentStep = 0;
+            }
+            updateTapePosition();
+        });
+
+        arrowBack.addEventListener('mouseenter', () => {
+            if (currentStep > 0) {
+                currentStep--;
+                updateTapePosition();
+            }
+        });
+
+        arrowBack.addEventListener('click', () => {
+            if (currentStep > 0) {
+                currentStep--;
+            } else {
+                currentStep = maxStep;
+            }
+            updateTapePosition();
+        });
+    </script>
+</body>
+</html>
+<h1 class="page-title tokoh-title">Pandawa Lima</h1>
+
+<div class="tokoh-grid">
+
+  
+    <div class="tokoh-card">
+        <div class="tokoh-info">
+            <h3>Yudhistira</h3>
+            <p>Yudhistira adalah sulung Pandawa yang terkenal dengan sifat jujur, bijaksana, dan tidak pernah berbohong sepanjang hidupnya. Ia memerintah Kerajaan Amarta dengan keadilan murni serta mengutamakan kedamaian dibanding peperangan. Sebagai sosok berjiwa suci, ia kerap menjadi panutan moral bagi saudara-saudaranya dalam menghadapi berbagai cobaan hidup.</p>
+        </div>
+        <div class="tokoh-divider"></div>
+        <div class="tokoh-image-container">
+            <img src="yudhi wayang kulit.png" alt="Yudhistira" class="tokoh-img img-main">
+            <img src="yudhi gambar.png" alt="Yudhistira Hover" class="tokoh-img img-hover">
+        </div>
+    </div>
+
+  
+    <div class="tokoh-card">
+        <div class="tokoh-info">
+            <h3>Bima</h3>
+            <p>Bima merupakan putra kedua yang memiliki fisik amat gagah perkasa serta keberanian tanpa tanding di medan laga. Meskipun perawakannya menakutkan dan bicaranya tegas, ia memiliki hati yang sangat jujur, setia, dan protektif terhadap keluarganya. Senjata kuku Pancanaka miliknya menjadi simbol kekuatan tak tergoyahkan dalam menegakkan kebenaran.</p>
+        </div>
+        <div class="tokoh-divider"></div>
+        <div class="tokoh-image-container">
+            <img src="bima wayang2.jpg" alt="Bima" class="tokoh-img img-main">
+            <img src="bima3.png" alt="Bima Hover" class="tokoh-img img-hover">
+        </div>
+    </div>
+
+    
+    <div class="tokoh-card">
+        <div class="tokoh-info">
+            <h3>Arjuna</h3>
+            <p>Arjuna adalah putra ketiga yang dikenal atas parasnya yang tampan, kelembutan budi pekerti, serta kemahirannya memanah. Ia kerap menjadi ksatria andalan Pandawa yang memperoleh berbagai pusaka sakti berkat ketekunannya bertapa. Kepribadiannya yang tenang dan karismatik menjadikannya sosok ksatria yang sangat disegani kawan maupun lawan.</p>
+        </div>
+        <div class="tokoh-divider"></div>
+        <div class="tokoh-image-container">
+            <img src="arjuna wayang2.jpeg" alt="Arjuna" class="tokoh-img img-main">
+            <img src="arjuna3.png" alt="Arjuna Hover" class="tokoh-img img-hover">
+        </div>
+    </div>
+
+
+<div class="tokoh-card tokoh-card-wide">
+    <div class="tokoh-image-container">
+        <img src="nakula wayang.jpg" alt="Nakula" class="tokoh-img img-main">
+        <img src="nakula1.png" alt="Nakula Hover" class="tokoh-img img-hover">
+    </div>
+    <div class="tokoh-divider-v"></div>
+    <div class="tokoh-info">
+        <h3>Nakula</h3>
+        <p>Nakula merupakan salah satu dari dua saudara kembar Pandawa yang dianugerahi ketampanan luar biasa serta kepandaian mengawat kuda. Ia ahli dalam merawat dan memahami karakter hewan, terutamanya kuda pacu kerajaan. Selain tangkas bertarung, kemampuannya dalam menjaga rahasia menjadikannya sosok yang sangat tepercaya di istana.</p>
+    </div>
+</div>
+
+
+<div class="tokoh-card tokoh-card-wide">
+    <div class="tokoh-image-container">
+        <img src="sadewa.jpg" alt="Sadewa" class="tokoh-img img-main">
+        <img src="kembar.png" alt="Sadewa Hover" class="tokoh-img img-hover">
+    </div>
+    <div class="tokoh-divider-v"></div>
+    <div class="tokoh-info">
+        <h3>Sadewa</h3>
+        <p>Sadewa adalah putra bungsu Pandawa sekaligus saudara kembar Nakula yang memiliki tingkat kecerdasan dan wawasan amat tinggi. Ia sangat mahir dalam ilmu perbintangan atau astronomi serta bijak dalam meramal strategi masa depan. Meski tergolong paling muda, nasihat bijaknya sering kali menjadi kunci penyelesaian masalah rumit Pandawa.</p>
+    </div>
+</div>
+
+<h1 class="page-title tokoh-title" style="margin-top: 40px;">Punakawan</h1>
+
+
+</div><div class="punakawan-semar-container">
+    <div class="tokoh-card tokoh-card-wide">
+        
+     
+        <div class="tokoh-image-container">
+            <img src="semar.jpg" alt="Semar Kiri" class="tokoh-img img-main">
+            <img src="semar2.jpg" alt="Semar Hover Kiri" class="tokoh-img img-hover">
+        </div>
+
+        <div class="tokoh-divider-v"></div>
+
+        <div class="tokoh-info">
+            <h3>Semar</h3>
+            <p>
+                Semar atau Bodronoyo adalah sosok pengasuh sekaligus penasihat spiritual utama para ksatria Pandawa yang sebenarnya merupakan manifestasi dewa tertinggi, Batara Ismaya. Meskipun memiliki wujud fisik yang sangat sederhana, unik, dan kerap bersikap humoris, ia menyimpan kearifan serta kesaktian tiada tanding yang disegani oleh para dewa maupun raja.
+            </p>
+            <p style="margin-top: 8px;">
+                Dalam tradisi pewayangan Jawa, kehadiran Semar melambangkan simbol pengayoman rakyat kecil serta penyeimbang dinamika moral kehidupan. Ia selalu membimbing para ksatria agar tidak menyeleweng dari kebenaran dan keadilan, menegaskan bahwa kejayaan sejati seorang pemimpin senantiasa berakar pada kerendahan hati, kearifan lokal, dan pengabdian tulus kepada sesama.
+            </p>
+        </div>
+
+        <div class="tokoh-divider-v"></div>
+
+        <div class="tokoh-image-container">
+            <img src="semar guy.JPG" alt="Semar Kanan" class="tokoh-img img-main">
+            <img src="semar gambar.jpg" alt="Semar Hover Kanan" class="tokoh-img img-hover">
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="flip-grid">
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="gareng.jpeg" alt="Gareng">
+                <div class="flip-title-overlay">Gareng</div>
+            </div>
+            <div class="flip-card-back">
+                <h3>Gareng</h3>
+                <p>Gareng adalah putra sulung Semar yang berkaki pincang, bertangan patah, dan bermata juling. Cacat fisiknya mengandung ajaran moral agar manusia selalu berhati-hati dalam melangkah, bertindak, dan memandang dunia. Ia memiliki sifat humoris, jujur, serta sangat setia mendampingi para ksatria.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="petruk.jpg" alt="Petruk">
+                <div class="flip-title-overlay">Petruk</div>
+            </div>
+            <div class="flip-card-back">
+                <h3>Petruk</h3>
+                <p>Petruk adalah anak kedua yang bertubuh sangat tinggi, berhidung panjang, dan suka tersenyum. Karakteristik fisiknya melambangkan pemikiran yang panjang dan berpandangan luas dalam menghadapi masalah. Ia sangat pandai mengocok perut dengan bualannya namun selalu menyimpan kritik sosial yang tajam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="bagong.webp" alt="Bagong">
+                <div class="flip-title-overlay">Bagong</div>
+            </div>
+            <div class="flip-card-back">
+                <h3>Bagong</h3>
+                <p>Bagong adalah anak bungsu yang bayangannya diciptakan langsung dari Semar, bermata lebar dan bertubuh gemuk. Ia memiliki sifat paling lancang, kritis, dan jujur tanpa basa-basi kepada siapa pun termasuk para raja. Kepolosannya menjadi simbol kebenaran murni tanpa kepalsuan.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="togog.jpg" alt="Togog">
+                <div class="flip-title-overlay">Togog</div>
+            </div>
+            <div class="flip-card-back">
+                <h3>Togog</h3>
+                <p>Togog atau Sanghyang Tejomantara adalah saudara Semar yang ditugaskan mengasuh para raksasa dan pihak antagonis. Meskipun melayani pihak jahat, ia selalu memberikan nasihat kebaikan agar para raja angkara murka menyadari kesalahannya. Tokoh ini melambangkan pengingat moral di tengah kegelapan.</p>
+            </div>
+        </div>
+    </div>
+<h1 class="page-title tokoh-title" style="margin-top: 50px; color: #f08b8b;">Tokoh Antagonis</h1>
+
+<div class="antagonis-grid">
+
+   
+    <div class="antagonis-card">
+        <div class="antagonis-image-container">
+            <img src="duryudana.jpg" alt="Duryudana" class="tokoh-img img-main">
+            <img src="duryudana2.jpeg" alt="Duryudana Hover" class="tokoh-img img-hover">
+        </div>
+        <div class="antagonis-divider"></div>
+        <div class="antagonis-info">
+            <h3>Duryudana</h3>
+            <p>Duryudana adalah raja Hastinapura sekaligus sulung dari seratus Kurawa yang memiliki sifat ambisius, keras kepala, dan mudah terhasut. Keinginan kuatnya untuk menguasai seluruh kerajaan secara mutlak membuatnya membutakan keadilan dan menolak membagi kekuasaan dengan Pandawa. Meskipun sering dianggap licik, ia dikenal sangat loyal dan menghormati sahabat-sahabat karibnya seperti Karna.</p>
+        </div>
+    </div>
+
+   
+    <div class="antagonis-card">
+        <div class="antagonis-image-container">
+            <img src="sengkuni.jpg" alt="Sengkuni" class="tokoh-img img-main">
+            <img src="sengkuni3.jpeg" alt="Sengkuni Hover" class="tokoh-img img-hover">
+        </div>
+        <div class="antagonis-divider"></div>
+        <div class="antagonis-info">
+            <h3>Sengkuni</h3>
+            <p>Patih Sengkuni merupakan paman dari Kurawa yang dikenal sebagai dalang di balik berbagai intrik politik dan adu domba berdarah di Hastinapura. Kelicikan serta keluesan bicaranya berhasil memicu permainan dadu fatal yang mengakibatkan Pandawa kehilangan kerajaan dan terbuang ke hutan. Dendam kesumat masa lalunya menjadi bahan bakar utama untuk menghancurkan trah Kuru dari dalam.</p>
+        </div>
+    </div>
+
+    
+    <div class="antagonis-card">
+        <div class="antagonis-image-container">
+            <img src="resi durna.jpeg" alt="Resi Durna" class="tokoh-img img-main">
+            <img src="resi durna2.jpeg" alt="Resi Durna Hover" class="tokoh-img img-hover">
+        </div>
+        <div class="antagonis-divider"></div>
+        <div class="antagonis-info">
+            <h3>Resi Durna</h3>
+            <p>Resi Durna adalah guru besar ilmu keprajuritan yang mengajarkan seni berperang kepada Pandawa maupun Kurawa di masa muda mereka. Meski sebenarnya sangat mencintai Arjuna, keterikatan utang budi dan perlindungan dari istana Hastinapura memaksanya berdiri di pihak Kurawa saat Bharatayuddha. Dilema moral dan rasa sayangnya pada sang anak, Aswatama, menjadi titik lemah terbesarnya di medan laga.</p>
+        </div>
+    </div>
+
+    <div class="antagonis-card">
+        <div class="antagonis-image-container">
+            <img src="karna.jpg" alt="Adipati Karna" class="tokoh-img img-main">
+            <img src="adipati karna.jpg" alt="Adipati Karna Hover" class="tokoh-img img-hover">
+        </div>
+        <div class="antagonis-divider"></div>
+        <div class="antagonis-info">
+            <h3>Adipati Karna</h3>
+            <p>Adipati Karna adalah kakak kandung tertua Pandawa dari ibu Kunti yang dibuang sejak bayi dan dibesarkan oleh seorang kusir kuda. Karena sering dihina atas asal-usulnya, ia mendapat pengakuan serta martabat dari Duryudana sehingga mengikat janji setia sehidup semati kepada Kurawa. Karakter tragically heroic ini bertarung gagah berani di Bharatayuddha meski tahu dirinya berada di pihak yang salah demi sebuah kesetiaan.</p>
+        </div>
+    </div>
+
+</div>
+
+<h1 class="page-title tokoh-title" style="margin-top: 50px; color: #deb885;">Jenis-Jenis Wayang</h1>
+
+
+<div class="jenis-wayang-grid">
+
+  
+    <div class="jenis-card">
+        <div class="jenis-card-inner">
+            <div class="jenis-card-front">
+                <img src="wayang kulit.jpg" alt="Wayang Kulit">
+                <div class="jenis-title-overlay">Wayang Kulit</div>
+            </div>
+  
+            <div class="jenis-card-back">
+                <h3>Wayang Kulit</h3>
+                <p>Terbuat dari lembaran kulit kerbau atau sapi yang dipahat halus dan diwarnai. Dimainkan oleh dalang di balik layar kain putih (kelir) yang disorot lampu. Membawakan kisah epik Mahabarata dan Ramayana.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="jenis-card">
+        <div class="jenis-card-inner">
+      
+            <div class="jenis-card-front">
+                <img src="golek.webp" alt="Wayang Golek">
+                <div class="jenis-title-overlay">Wayang Golek</div>
+            </div>
+
+            <div class="jenis-card-back">
+                <h3>Wayang Golek</h3>
+                <p>Seni pertunjukan boneka kayu 3 dimensi yang berasal dari tanah Sunda (Jawa Barat). Tokoh-tokohnya memiliki kostum kain berhias sulaman indah dan ekspresi wajah kayu yang sangat khas serta dinamis.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="jenis-card">
+        <div class="jenis-card-inner">
+            <div class="jenis-card-front">
+                <img src="wayang orang.jpg" alt="Wayang Orang">
+                <div class="jenis-title-overlay">Wayang Orang</div>
+            </div>
+            <div class="jenis-card-back">
+                <h3>Wayang Orang</h3>
+                <p>Bentuk drama tari di mana peran wayang ditarikan langsung oleh para aktor manusia. Para penari mengenakan riasan wajah dramatis dan mahkota mahkota megah seperti wujud tokoh wayang kulit asli.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="jenis-card">
+        <div class="jenis-card-inner">
+            <div class="jenis-card-front">
+                <img src="wayang beber.jpg" alt="Wayang Beber">
+                <div class="jenis-title-overlay">Wayang Beber</div>
+            </div>
+            <div class="jenis-card-back">
+                <h3>Wayang Beber</h3>
+                <p>Salah satu jenis wayang tertua yang menggunakan gulungan kain atau kertas bergambar (beber). Dalang menceritakan babak demi babak kisah Panji sambil membuka gulungan gambar secara berurutan.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<h1 class="page-title tokoh-title" style="margin-top: 50px; color: #52cc67;">Makna & Filosofi</h1>
+
+
+<div class="filosofi-container">
+
+
+    <div class="filosofi-banner">
+        <div class="filosofi-quote-mark">“</div>
+        <p class="filosofi-jawa">Sura Dira Jayaningrat, Lebur Dening Pangastuti</p>
+        <p class="filosofi-arti">"Segala bentuk kejahatan, keberanian, dan kemurkaan yang keras akan dileburkan oleh kelembutan, kesabaran, dan kebaikan."</p>
+    </div>
+
+
+    <div class="filosofi-grid">
+
+        <div class="filosofi-card">
+            <div class="filosofi-icon">☯</div>
+            <h3>Bayangan & Realitas</h3>
+            <p>Layar putih (kelir) melambangkan dunia tempat manusia hidup, sedangkan bayangan wayang melambangkan jiwa dan perjalanan hidup manusia yang digerakkan oleh Takdir (Dalang).</p>
+        </div>
+
+        <div class="filosofi-card">
+            <div class="filosofi-icon">⚖</div>
+            <h3>Keseimbangan Moral</h3>
+            <p>Pertarungan Pandawa (Kebaikan) dan Kurawa (Kejahatan) mengajarkan bahwa dalam diri manusia selalu ada pergolakan batin antara nafsu baik dan buruk yang harus dijaga keseimbangannya.</p>
+        </div>
+
+
+        <div class="filosofi-card">
+            <div class="filosofi-icon">📜</div>
+            <h3>Pendidikan Karakter</h3>
+            <p>Setiap pertunjukan wayang bukan hanya sarana hiburan, melainkan media tontonan yang menjadi tuntunan moral, etika kepemimpinan, serta kerendahan hati dalam bermasyarakat.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<audio id="bg-music" src="Tohpati - Seribu Cahaya.mp3" loop></audio>
+
+
+<button class="music-btn" onclick="toggleMusic()">
+    <span id="music-icon">▶</span>
+</button>
+
+<script>
+    const music = document.getElementById('bg-music');
+    const icon = document.getElementById('music-icon');
+
+    function toggleMusic() {
+        if (music.paused) {
+            music.play();
+            icon.textContent = '❚❚';
+        } else {
+            music.pause();
+            icon.textContent = '▶';
+        }
+    }
+</script>
+ <div class="footer">
+                <p>Tara 95 32</p>
+            </div>
+        </body>
+    </body>
+</html>

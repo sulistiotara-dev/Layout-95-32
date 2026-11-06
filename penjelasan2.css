@@ -1,0 +1,11 @@
+
+h2 {font-family:"KG Corner of the Sky";
+    font-size: 25pt;
+    background-color: teal;
+    color:white;
+    text-align: center;
+}
+@font-face {
+    font-family: "KG Corner of the Sky";
+    src: url("KGCorneroftheSky.ttf");
+}
